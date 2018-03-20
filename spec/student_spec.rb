@@ -183,6 +183,7 @@ describe Student do
         jess.save
 
         tenth_grade = Student.all_students_in_grade_X(10)
+        # binding.pry
         expect(tenth_grade.size).to eq(3)
       end
     end
